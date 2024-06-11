@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "CSS/main.css" %}">
+    <link rel="stylesheet" href="{% static "CSS/resum.css" %}">
+    <script  defer src="{% static "JS/main.js" %}"></script>
+    <title>FLUX</title>
+</head>
+<body>
+    <nav id="Navigation">
+        <div class="NavItem" id="logoConteiner">
+            <a href=" {% url 'home' %}">
+                <img src="{% static "imgs/Logo.svg" %}" alt="Logo">
+            </a>
+        </div>
+
+        <div class="NavItem">
+           {{pageTitle|default:""}}
+        </div>
+
+        <div class="NavItem">
+           {{user}}
+        </div>
+    </nav>
+
+    <Main id="MainContent">
+
+        {% block content %}
+        {% endblock content %}
+
+    </Main>
+
+    <footer id="FooterBar">
+        <div id="FooterAligner">
+            <img src="{% static "imgs/Logo.svg" %}" alt="Logo">
+        </div>
+    </footer>
+</body>
+</html>

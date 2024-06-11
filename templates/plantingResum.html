@@ -1,0 +1,53 @@
+{% extends "main.html" %}
+{% load static %}
+{% block content %}
+
+<div class="infoWidget">
+    <div class="metricsConteiner">
+        <span>Temperatura atual</span>
+        <div class="metric badMetric">
+            {{temp}}°C
+        </div>
+        <span>Temperatura ideal</span>
+        <div class="metric goodMetric">
+            25°C
+        </div>
+    </div>
+    <div class="metricIcon">
+        <img src="{% static 'imgs/thermomether.svg'%}" alt="">
+    </div>
+</div>
+
+<div class="infoWidget">
+    <div class="metricsConteiner">
+        <span>Umidade atual</span>
+        <div class="metric infoMetric">
+            53%
+        </div>
+        <span>Umidade ideal</span>
+        <div class="metric goodMetric">
+            60%
+        </div>
+    </div>
+    <div class="metricIcon">
+        <img src="{% static 'imgs/umidity.svg'%}" alt="">
+    </div>
+</div>
+
+<div class="infoWidget">
+    <div class="metricsConteiner">
+        <span>Dias até a colheita</span>
+        <div class="metric infoMetric">
+           55 Dias
+        </div>
+        <span>Nivel de stress fisico</span>
+        <div class="metric goodMetric">
+            12%
+        </div>
+    </div>
+    <div class="metricIcon">
+        <img src="{% static 'imgs/umidity.svg'%}" alt="">
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,97 @@
+/* Lembrar de remover a altura do bod7 e html */
+:root{
+    --mainColor: #01B871
+}
+
+body{
+    background-image: url("../imgs/bg.webp");
+    background-size: cover;
+    background-position: right top;
+    background-attachment: scroll;
+    margin: 0px;
+}
+
+body, html{
+    height: 100vh;
+}
+
+#Navigation{
+    color: white;
+    font-size: 7vw;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%;
+}
+
+#logoConteiner{
+    width: 10%;
+}
+
+#Navigation img{
+    width: 100%;
+}
+
+#MainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10% 20%;
+    text-align: justify;
+}
+.plantingAction{
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plantingAction input{
+    border-radius: 0.5em;
+    margin-top:  8%;
+    border: 0px solid white;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px;
+    
+}
+
+.plantingAction input:hover{
+    background-color: rgb(172, 172, 172);
+}
+
+
+.plantingIco{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 1em;
+    font-size:10vw;
+}
+
+#FooterBar{
+    position: sticky;
+    bottom: 0px;
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+}
+
+#FooterAligner{
+    background-color: var(--mainColor);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-radius: 2em 2em 0px 0px;
+}
+
+#FooterAligner img{
+    width: 20%;
+}

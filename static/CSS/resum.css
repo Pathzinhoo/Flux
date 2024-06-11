@@ -1,0 +1,39 @@
+.infoWidget{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1em;
+    margin-top: 10%;
+}
+
+.metricIcon {
+    width: 20%;
+}
+.metricIcon img {
+    width: 100%;
+}
+
+.metricsConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+
+.metric{
+    font-size: 10vw;
+    font-weight: bold;
+}
+
+.goodMetric{
+    color: green;
+}
+
+.infoMetric{
+    color: orange;
+}
+
+.badMetric{
+    color: red;
+}

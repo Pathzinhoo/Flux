@@ -1,0 +1,20 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="plantingConteiner">
+
+    <div class="plantingIco">
+        <img src="{% static  'imgs/Leaf.webp' %}" alt="">
+        <span>Plantio #1</span>
+    </div>
+    <div class="plantingAction">
+        <input id="sugestion" type="button" value="Sugestão de idéias">
+        <input id="resum" type="button" value="Resumo diário">
+        <input id="monthly" type="button" value="Acompanhamento mensal">
+
+    </div>
+</div>
+
+{% endblock content %}
